@@ -35,17 +35,5 @@ for k=1:rois
     end
 end
 
-% 
-% Q = phases;
-% 
-% dfcg2=zeros(slides,rois,rois);
-% 
-% for ts=1:slides
-%    tt=[(ts-1)*step1 + 1:(ts-1)*step1 + window1];
-%    
-%    iplv=abs(mean(sign(Q(:,tt)*Q(:,tt)')))/length(tt);
-% 
-%    dfcg2(ts,:,:)=iplv;
-% end
-% 
+
 
