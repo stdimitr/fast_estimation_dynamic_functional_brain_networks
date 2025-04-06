@@ -14,33 +14,21 @@ function dfcg=fast_cosine_dfcg(multi,window1,step1)
 
 [rois samples]=size(multi);
 
-slides=(samples-window1)/step1 + 1;
 
-phases=angle(hilbert(multi));
+slides=round((samples-window1)/step1);
 
+phases=angle(hilbert(multi'))';
+Q = (exp(1i*phases));
 
 dfcg=zeros(slides,rois,rois);
 
 for ts=1:slides
-     tt=[(ts-1)*step1 + 1:(ts-1)*step1 + window1];
-    %D=squareform(pdist(phases(:,tt),'cosine'));
-    %dfcg(ts,:,:)=D;
-    for k=1:rois
-        for l=(k+1):rois
-            sim=sum(cos(adif(phases(k,tt),phases(l,tt))))/window1;
-            dfcg(ts,k,l)=abs(sim);
-            dfcg(ts,l,k)=abs(sim);
-        end
-    end
+   tt=[(ts-1)*step1 + 1:(ts-1)*step1 + window1];
+   
+   cosine=cos(abs(Q(:,tt)*Q(:,tt)'))/window1;
+  
+   dfcg(ts,:,:)=cosine;
 end
 
 
-
-function c=adif(a,b)
-d = abs(a-b);
-if d>pi
-    c=2*pi-d;
-else
-    c=d;
-end
 
