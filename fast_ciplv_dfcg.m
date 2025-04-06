@@ -1,7 +1,7 @@
 function dfcg=fast_ciplv_dfcg(multi,window1,step1)
 
 
-%%% A FAST IMPLEMENTATION OF PLV FOR DYNAMIC FUNCTIONAL BRAIN NETWORKS
+%%% A FAST IMPLEMENTATION OF CORRECTED IMAGINARY PART OF PLV (ciPLV) FOR DYNAMIC FUNCTIONAL BRAIN NETWORKS
 %%% INPUT : multi = filtered multichannel recordings with dimensions 
 %%%                 sensors/sources/rois x samples (time points)
 %%%       window1 = width of temporal segment in samples
