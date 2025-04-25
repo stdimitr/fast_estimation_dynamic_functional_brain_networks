@@ -7,7 +7,8 @@ If you find interesting this toolbox and you use it for your own research,
 you should cite one the following article:
 
 [1] Dimitriadis SI, Routley B, Linden DEJ, Singh KD. Multiplexity of human brain oscillations as a personal brain signature. 
-    Hum Brain Mapp. 2023 Dec 1;44(17):5624-5640. doi: 10.1002/hbm.26466.   
+    Hum Brain Mapp. 2023 Dec 1;44(17):5624-5640.  
+    https://doi.org/10.1002/hbm.26466   
     (https://onlinelibrary.wiley.com/doi/10.1002/hbm.26466)
     
 [2] Dimitriadis SI.ℛSCZ: A Riemannian schizophrenia diagnosis framework based on the multiplexity of EEG-based dynamic functional connectivity patterns,
