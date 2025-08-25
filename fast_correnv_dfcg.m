@@ -15,7 +15,7 @@ function dfcg=fast_correnv_dfcg(multi,window1,step1)
 
 [rois samples]=size(multi);
 
-slides=round((samples-window1)/step1);
+slides=round((samples-window1)/step1) + 1;
 
 env=abs(hilbert(multi')');
 
@@ -31,4 +31,5 @@ for ts=1:slides
       dfcg(ts,:,:)=abs(pears);
       
 end
+
 
