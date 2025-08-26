@@ -24,12 +24,12 @@ dfcg=zeros(slides,rois,rois);
 
 for ts=1:slides
      tt=[(ts-1)*step1 + 1:(ts-1)*step1 + window1];
-    %D=squareform(pdist(phases(:,tt),'cosine'));
-    %dfcg(ts,:,:)=D;
+
     
-      pears=squareform(pdist(multi(:,tt),'@pearson_cc'));
+      pears=squareform(pdist(env(:,tt),'@pearson_cc'));
       dfcg(ts,:,:)=abs(pears);
       
 end
+
 
 
