@@ -1,6 +1,12 @@
 # fast_estimation_dynamic_functional_brain_networks
 
-This small toolbox implements a fast estimation of PLV, iPLV, PLI and Pearson's correlation over the Hilberted envelope and cosine
+This small toolbox implements a fast estimation of seven basic connectivity estimators:
+ -PLV, 
+- iPLV,
+- ciPLV
+- PLI,
+- Pearson's correlation over the Hilberted envelope (correnv),
+- Pearson's correlation over the original brain recordings (corr) and cosine
 for the construction of dynamic functional brain networks from multichannel recordings.
 
 If you find interesting this toolbox and you use it for your own research,
