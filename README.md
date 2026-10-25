@@ -1,9 +1,8 @@
 # fast_estimation_dynamic_functional_brain_networks
 
 This small toolbox implements a fast estimation of seven basic connectivity estimators:
-
- -PLV, 
 - iPLV,
+- PLV
 - ciPLV
 - PLI,
 - cosine
